@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>E-Store</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="brand">
+          <button onclick="openMenu()">
+            &#9776;
+          </button>
+          <a href="index.html">E-Store</a>
+        </div>
+        <div class="header-links">
+          <a href="cart.html">Cart</a>
+          <a href="signin.html">Sign In</a>
+        </div>
+      </header>
+      <aside class="side-bar">
+        <h3>Shopping Categories</h3>
+        <button class="side-bar-close" onclick="closeMenu()">x</button>
+        <ul>
+          <li>
+            <a href="index.html">
+              Shirts
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              Pants
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-1.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-2.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-3.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-2.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-1.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="images/img-3.jpg"
+                  alt="product"
+                />
+                <div class="product-name">
+                  <a href="product.html">Slim Fit</a>
+                </div>
+                <div class="product-brand">Nike</div>
+                <div class="product-rating">4.5 stars(10 reviews)</div>
+                <div class="product-price">$60</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">
+        All rights reserved
+      </footer>
+    </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".side-bar").classList.add("open");
+      }
+      function closeMenu() {
+        document.querySelector(".side-bar").classList.remove("open");
+      }
+    </script>
+  </body>
+</html>
