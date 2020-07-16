@@ -28,6 +28,10 @@ app.get("/api/config/paypal", (req, res) => {
 });
 app.use("/uploads", express.static(path.join(__dirname, "/../uploads")));
 
-app.listen(config.PORT, () => {
-  console.log("Server started at http://localhost:5000");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = config.PORT;
+}
+app.listen(port, () => {
+  console.log("Server has started at sucessfullt");
 });
